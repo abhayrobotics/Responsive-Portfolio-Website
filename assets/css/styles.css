@@ -21,7 +21,7 @@
     /** Secondary Color */
     --color-s1 : #fff;
     --color-s2 : rgba(0,0,0,0.1);
-    --color-s3 : rgba(0,0,0,0.02);
+    --color-s3 : #fafafa;
     --font-color: #1b1b1b;
     --font-color2: #333;
 
@@ -40,7 +40,7 @@
 
     /*========== z index ==========*/
     --z-tooltip: ;
-    --z-fixed: ;
+    --z-fixed: 100;
     --z-modal: 
 
 }
@@ -60,7 +60,10 @@ body{
 /*========== Variables Dark theme ==========*/
 /**========== Reussabel css  ==========*/
 .active_menu{
-    display: grid;
+    /* display: grid; */
+    bottom: 50px;
+    
+   
 
 }
 
@@ -142,14 +145,15 @@ nav ul li a ion-icon{
 @media screen and (max-width:550px) {
     nav ul{
         position: fixed;
-        bottom: 50px;
-        left: 0;
+        bottom: -30%;
+        right: 0;
         box-shadow: 0 0 20px var(--color-s2);
         border-radius: 20px 20px 0 0 ;
-        
-        display: none;
+        transition:0.5s;
+        display: grid;
         grid-template-columns: repeat(3,1fr);
        width: 100%;
+       z-index: 10;
         
     }
     .navbar{
@@ -157,6 +161,7 @@ nav ul li a ion-icon{
         bottom: 0;
         width: 100vw;
         background-color: var(--color-s3);
+        z-index: var(--z-fixed)
     }
     
 }
