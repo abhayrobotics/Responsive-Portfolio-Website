@@ -18,9 +18,10 @@
 
 <body>
 
+    <!-- * Navigation Menu -->
     <header>
         <nav>
-            <ul class="navigation" id= "navigation">
+            <ul class="navigation" id="navigation">
                 <li class="menu">
                     <a href="">
                         <ion-icon name="home-outline"></ion-icon>
@@ -28,42 +29,86 @@
                     </a>
                 </li>
                 <li class="menu"><a href="">
-                    <ion-icon name="person-outline"></ion-icon>
-                    <h2>About</h2>
-                </a></li>
+                        <ion-icon name="person-outline"></ion-icon>
+                        <h2>About</h2>
+                    </a></li>
                 <li class="menu"><a href="">
-                    <ion-icon name="code-outline"></ion-icon>
-                    <h2>Skills</h2>
-                </a></li>
+                        <ion-icon name="code-outline"></ion-icon>
+                        <h2>Skills</h2>
+                    </a></li>
                 <li class="menu"><a href="">
-                    <ion-icon name="briefcase-outline"></ion-icon>
-                    <h2>Services</h2>
-                </a></li>
+                        <ion-icon name="briefcase-outline"></ion-icon>
+                        <h2>Services</h2>
+                    </a></li>
                 <li class="menu"><a href="">
-                    <ion-icon name="image-outline"></ion-icon>
-                    <h2>Portfolio</h2>
-                </a></li>
+                        <ion-icon name="image-outline"></ion-icon>
+                        <h2>Portfolio</h2>
+                    </a></li>
                 <li class="menu"><a href="">
-                    <ion-icon name="send-outline"></ion-icon>
-                    <h2>Contact</h2>
-                </a></li>
+                        <ion-icon name="send-outline"></ion-icon>
+                        <h2>Contact</h2>
+                    </a></li>
             </ul>
 
             <!--*************************** Navbar -->
             <div class="navbar">
-                <h2>Abhay</h2>
+                <h2>Alexa</h2>
                 <div class="apps">
 
                     <ion-icon name="moon-outline"></ion-icon>
-                    
-                    <ion-icon  onclick="openMenu()"  name="apps-outline" id="app"></ion-icon>
-                    <ion-icon  onclick="closeMenu()"   name="close-outline" id="closeBtn"></ion-icon>
+
+                    <ion-icon onclick="openMenu()" name="apps-outline" id="app"></ion-icon>
+                    <ion-icon onclick="closeMenu()" name="close-outline" id="closeBtn"></ion-icon>
                 </div>
-            
+
             </div>
         </nav>
     </header>
-    
+
+    <!--* Hero Section -->
+    <section class="hero-section">
+        <div class="photo">
+            <div class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <ion-icon name="logo-youtube"></ion-icon>
+ 
+            </div>
+
+            <svg class="blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <mask id="mask0" mask-type="alpha">
+                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                </mask>
+                <g mask="url(#mask0)">
+                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                    <image href="./assets/img/perfil.png">
+                </g>
+            </svg>
+
+        </div>
+
+        <div class="hero-text">
+            <h2>Hi, I'm Alexa</h2>
+            <h3>Full Stack Web Developer</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At veritatis voluptas et tenetur</p>
+        </div>
+
+        <div class="btn">
+            <a href="#contact">Explore  </a>
+        </div>
+        <ion-icon name="chevron-down-outline"></ion-icon>
+
+    </section>
+
+
+
     <script src="./assets/js/main.js"></script>
 </body>
 

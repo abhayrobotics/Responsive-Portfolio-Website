@@ -4,45 +4,45 @@
 
 /* ************************Index *************************/
 /** variable CSS */
-/* ***Navbar********* */
-/* ***Header */
+/* ***Header- Navbar */
+/* ***Hero Section********* */
 
 /*?==================== VARIABLES CSS ====================*/
 :root {
-   
+    
     /**========== Colors ==========*/
-
+    
     /** primary color */
     --color-p : #37d610;
     --color-p : #f03c72;
     --color-p : #ffc000 ;
     --color-p : #5956fe;
-
+    
     /** Secondary Color */
     --color-s1 : #fff;
     --color-s2 : rgba(0,0,0,0.1);
     --color-s3 : #fafafa;
     --font-color: #1b1b1b;
     --font-color2: #333;
-
+    
     /* *Ascent color */
     --border-color: rgba(0,0,0,0.4);
     --rating-color: #ff9800;
-
+    
     --font-fam1: 'Poppins', sans-serif;
     --font-fam2: "open-sans";
     --icon-size : 30px;
-
+    
     /*========== Font and typography ==========*/
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
     --font-h2: 18px;
     --font-icon: 25px;
-
+    
     /*========== z index ==========*/
     --z-tooltip: ;
     --z-fixed: 100;
     --z-modal: 
-
+    
 }
 
 
@@ -63,8 +63,8 @@ body{
     /* display: grid; */
     bottom: 50px;
     
-   
-
+    
+    
 }
 
 
@@ -85,6 +85,10 @@ nav{
     flex-direction: column;
     /* position: relative; */
 }
+nav ul{
+    flex-direction: row;
+    display: flex;
+}
 
 nav ul li{
     list-style: none;
@@ -104,7 +108,7 @@ nav ul li a{
 nav ul li a:hover{
     color: var(--color-p);
     cursor: pointer;
-
+    
 }
 nav ul li a h2{
     font-size: var(--font-h2);
@@ -118,7 +122,7 @@ nav ul li a ion-icon{
     display: flex;
     justify-content: space-between;
     align-items: center;
-  
+    
     
     /* border: 1px solid red; */
 }
@@ -143,19 +147,23 @@ nav ul li a ion-icon{
 
 /* position botton for navbar  */
 @media screen and (max-width:550px) {
+    
+    /* * Show Menu  */
     nav ul{
         position: fixed;
         bottom: -30%;
         right: 0;
         box-shadow: 0 0 20px var(--color-s2);
+        background-color: var(--color-s3);
         border-radius: 20px 20px 0 0 ;
         transition:0.5s;
         display: grid;
         grid-template-columns: repeat(3,1fr);
-       width: 100%;
-       z-index: 10;
+        width: 100%;
+        z-index: 10;
         
     }
+    /* * Show Navbar  */
     .navbar{
         position: fixed;
         bottom: 0;
@@ -167,6 +175,68 @@ nav ul li a ion-icon{
 }
 
 
+/* ***Hero Section********* */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.hero-section .photo{
+    width: 100%;
+    padding: 10px;
+    margin: 20px;
+    margin-top: 10vh;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.social-link{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+
+}
+.social-link ion-icon{
+    font-size: var(--font-icon);
+    color: var(--font-color2);
+    padding: 15px 10px;
+    cursor: pointer;
+}
+.social-link ion-icon:hover{
+    color: var(--color-p);
+
+}
+.photo .blob{
+    fill: #5956fe;
+    width: 70%;
+    max-width: 300px;
+    padding: 10px;
+}
+.photo image{
+    width: 190px;
+    
+}
+.hero-text{
+    padding: 20px;
+}
+.btn{
+    background-color: var(--color-p);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: min-content;
+    left: 0;
+    
+}
+.btn a{
+    
+    color: var(--color-s3);
+    text-decoration: none;
+}
 
 
 
