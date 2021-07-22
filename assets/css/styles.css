@@ -1,68 +1,183 @@
 /*==================== GOOGLE FONTS ====================*/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-/*==================== VARIABLES CSS ====================*/
-:root {
-    font-family: 'Poppins', sans-serif;
-    --header-height: ;
 
-    /*========== Colors ==========*/
-    
+/* ************************Index *************************/
+/** variable CSS */
+/* ***Navbar********* */
+/* ***Header */
+
+/*?==================== VARIABLES CSS ====================*/
+:root {
+   
+    /**========== Colors ==========*/
+
+    /** primary color */
+    --color-p : #37d610;
+    --color-p : #f03c72;
+    --color-p : #ffc000 ;
+    --color-p : #5956fe;
+
+    /** Secondary Color */
+    --color-s1 : #fff;
+    --color-s2 : rgba(0,0,0,0.1);
+    --color-s3 : rgba(0,0,0,0.02);
+    --font-color: #1b1b1b;
+    --font-color2: #333;
+
+    /* *Ascent color */
+    --border-color: rgba(0,0,0,0.4);
+    --rating-color: #ff9800;
+
+    --font-fam1: 'Poppins', sans-serif;
+    --font-fam2: "open-sans";
+    --icon-size : 30px;
 
     /*========== Font and typography ==========*/
-    --body-font: ;
-
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
-    --big-font-size: ;
-    --h1-font-size: ;
-    --h2-font-size: ;
-    --h3-font-size: ;
-    --normal-font-size: ;
-    --small-font-size: ;
-    --smaller-font-size: ;
-
-    /*========== Font weight ==========*/
-    --font-medium: ;
-    --font-semi-bold: ;
-
-    /*========== Margenes Bottom ==========*/
-    /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
-    --mb-0-25: ;
-    --mb-0-5: ;
-    --mb-0-75: ;
-    --mb-1: ;
-    --mb-1-5: ;
-    --mb-2: ;
-    --mb-2-5: ;
-    --mb-3: ;
+    --font-h2: 18px;
+    --font-icon: 25px;
 
     /*========== z index ==========*/
     --z-tooltip: ;
     --z-fixed: ;
-    --z-modal: ;
+    --z-modal: 
+
 }
 
+
+*{
+    margin: 00;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-fam1);
+}
+body{
+    position: relative;
+    font-size: 16px;
+}
+
+/*========== Variables Dark theme ==========*/
+/**========== Reussabel css  ==========*/
+.active_menu{
+    display: grid;
+
+}
+
+
+/*========== Button Dark/Light ==========*/
+
+
+/* *****************************Navigation Bar*********************** */
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* position: relative; */
+}
+
+nav ul li{
+    list-style: none;
+    padding: 10px 10px;
+    /* border: 1px solid red; */
+    
+}
+nav ul li a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--font-color2);
+    font-size: var(--font-h2);
+}
+nav ul li a:hover{
+    color: var(--color-p);
+    cursor: pointer;
+
+}
+nav ul li a h2{
+    font-size: var(--font-h2);
+}
+nav ul li a ion-icon{
+    font-size: var(--font-icon);
+}
+
+/* *********************************navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    
+    /* border: 1px solid red; */
+}
+
+.navbar h2{
+    padding: 5px 5px;
+    font-size: var(--font-h2);
+}
+
+.navbar .apps{
+    padding: 5px 10px;
+    font-size: var(--font-icon);
+}
+
+.navbar .apps ion-icon{
+    cursor: pointer;
+    margin: 0 15px;
+}
+#closeBtn{
+    display: none;
+}
+
+/* position botton for navbar  */
+@media screen and (max-width:550px) {
+    nav ul{
+        position: fixed;
+        bottom: 50px;
+        left: 0;
+        box-shadow: 0 0 20px var(--color-s2);
+        border-radius: 20px 20px 0 0 ;
+        
+        display: none;
+        grid-template-columns: repeat(3,1fr);
+       width: 100%;
+        
+    }
+    .navbar{
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+        background-color: var(--color-s3);
+    }
+    
+}
+
+
+
+
+
+
+
+
+
 /* Font size for large devices */
-@media screen and (min-width: 968px) {
+/* @media screen and (min-width: 968px) {
     :root {
-        --big-font-size: ;
-        --h1-font-size: ;
+        
+        --h1-font-size:2rem ;
         --h2-font-size: ;
         --h3-font-size: ;
         --normal-font-size: ;
         --small-font-size: ;
         --smaller-font-size: ;
     }
-}
-
-/*========== Variables Dark theme ==========*/
-
-
-/*========== Button Dark/Light ==========*/
-
-
-/*==================== BASE ====================*/
-
-
-/*==================== REUSABLE CSS CLASSES ====================*/
-
+} */

@@ -1,15 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile first</title>
+
+    <!-- *icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
     <!-- * Core CSS -->
     <link rel="stylesheet" href="./assets/css/styles.css">
+
 </head>
+
 <body>
+
+    <header>
+        <nav>
+            <ul class="navigation" id= "navigation">
+                <li class="menu">
+                    <a href="">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <h2>Home</h2>
+                    </a>
+                </li>
+                <li class="menu"><a href="">
+                    <ion-icon name="person-outline"></ion-icon>
+                    <h2>About</h2>
+                </a></li>
+                <li class="menu"><a href="">
+                    <ion-icon name="code-outline"></ion-icon>
+                    <h2>Skills</h2>
+                </a></li>
+                <li class="menu"><a href="">
+                    <ion-icon name="briefcase-outline"></ion-icon>
+                    <h2>Services</h2>
+                </a></li>
+                <li class="menu"><a href="">
+                    <ion-icon name="image-outline"></ion-icon>
+                    <h2>Portfolio</h2>
+                </a></li>
+                <li class="menu"><a href="">
+                    <ion-icon name="send-outline"></ion-icon>
+                    <h2>Contact</h2>
+                </a></li>
+            </ul>
+
+            <!--*************************** Navbar -->
+            <div class="navbar">
+                <h2>Abhay</h2>
+                <div class="apps">
+
+                    <ion-icon name="moon-outline"></ion-icon>
+                    
+                    <ion-icon  onclick="openMenu()"  name="apps-outline" id="app"></ion-icon>
+                    <ion-icon  onclick="closeMenu()"   name="close-outline" id="closeBtn"></ion-icon>
+                </div>
+            
+            </div>
+        </nav>
+    </header>
     
-    Responsive website
+    <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
