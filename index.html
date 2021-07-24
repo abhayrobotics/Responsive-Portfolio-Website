@@ -295,151 +295,154 @@
         </div>
 
         <div class="category-box">
-            <div class="education active-tab" onclick="showQualification()">
+            <div class="education active-tab" onclick="showQualification('education')">
                 <ion-icon name="ribbon-outline"></ion-icon>
                 <h2>Education</h2>
             </div>
-            <div class="work" onclick="showWork()">
+            <div class="work" onclick="showQualification('work')">
                 <ion-icon name="briefcase-outline"></ion-icon>
                 <h2>Work</h2>
             </div>
         </div>
-        <!--* Education details **************************-->
-        <div class="timeline qualification-active">
-            <div class="course">
-                <div class="course-data">
-                    <h3>Electrical Engineering</h3>
-                    <p>Techno India | University</p>
-                    <div class="date">
-                        <ion-icon name="calendar-number-outline"></ion-icon>
-                        <p>2012-2016</p>
+
+        <div class="both-timeline">
+
+            <!--* Education details **************************-->
+            <div class="timeline qualification-active" id="education-tab">
+                <div class="course">
+                    <div class="course-data">
+                        <h3>Electrical Engineering</h3>
+                        <p>Techno India | University</p>
+                        <div class="date">
+                            <ion-icon name="calendar-number-outline"></ion-icon>
+                            <p>2012-2016</p>
+                        </div>
+                    </div>
+                    <div class="data-line">
+                        <div class="rounder"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="blank"></div>
+                </div>
+                <div class="course">
+
+                    <div class="blank">
+
+                    </div>
+                    <div class="data-line">
+                        <div class="rounder"></div>
+                        <div class="line"></div>
+                    </div>
+
+
+                    <div class="course-data">
+                        <h3>Frontend Developer</h3>
+                        <p>Texas | University</p>
+                        <div class="date">
+                            <ion-icon name="calendar-number-outline"></ion-icon>
+                            <p>2016-2018</p>
+                        </div>
                     </div>
                 </div>
-                <div class="data-line">
-                    <div class="rounder"></div>
-                    <div class="line"></div>
-                </div>
-                <div class="blank"></div>
-            </div>
-            <div class="course">
-
-                <div class="blank">
-
-                </div>
-                <div class="data-line">
-                    <div class="rounder"></div>
-                    <div class="line"></div>
-                </div>
-
-
-                <div class="course-data">
-                    <h3>Frontend Developer</h3>
-                    <p>Texas | University</p>
-                    <div class="date">
-                        <ion-icon name="calendar-number-outline"></ion-icon>
-                        <p>2016-2018</p>
+                <div class="course">
+                    <div class="course-data">
+                        <h3>UI/UX Designing</h3>
+                        <p>Texas | University</p>
+                        <div class="date">
+                            <ion-icon name="calendar-number-outline"></ion-icon>
+                            <p>2018-2019</p>
+                        </div>
+                    </div>
+                    <div class="data-line">
+                        <div class="rounder"></div>
+                        <div class="line"></div>
                     </div>
                 </div>
-            </div>
-            <div class="course">
-                <div class="course-data">
-                    <h3>UI/UX Designing</h3>
-                    <p>Texas | University</p>
-                    <div class="date">
-                        <ion-icon name="calendar-number-outline"></ion-icon>
-                        <p>2018-2019</p>
+                <div class="course">
+
+                    <div class="blank">
+
+                    </div>
+                    <div class="data-line">
+                        <div class="rounder"></div>
+                        <!-- <div class="line"></div> -->
+                    </div>
+
+
+                    <div class="course-data">
+                        <h3>Backend Developer</h3>
+                        <p> Coursera | Online Learning</p>
+                        <div class="date">
+                            <ion-icon name="calendar-number-outline"></ion-icon>
+                            <p>2019-2020</p>
+                        </div>
                     </div>
                 </div>
-                <div class="data-line">
-                    <div class="rounder"></div>
-                    <div class="line"></div>
-                </div>
+
+
+
             </div>
-            <div class="course">
 
-                <div class="blank">
-
+            <!-- *work Timeline****************************************** -->
+            <div class="timeline" id="work-tab">
+                <div class="course">
+                    <div class="course-data">
+                        <h3>Software Engineer</h3>
+                        <p>Microsoft | Peru</p>
+                        <div class="date">
+                            <ion-icon name="calendar-number-outline"></ion-icon>
+                            <p>2016-2018</p>
+                        </div>
+                    </div>
+                    <div class="data-line">
+                        <div class="rounder"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="blank"></div>
                 </div>
-                <div class="data-line">
-                    <div class="rounder"></div>
-                    <!-- <div class="line"></div> -->
-                </div>
+                <div class="course">
+
+                    <div class="blank">
+
+                    </div>
+                    <div class="data-line">
+                        <div class="rounder"></div>
+                        <div class="line"></div>
+                    </div>
 
 
-                <div class="course-data">
-                    <h3>Backend Developer</h3>
-                    <p> Coursera | Online Learning</p>
-                    <div class="date">
-                        <ion-icon name="calendar-number-outline"></ion-icon>
-                        <p>2019-2020</p>
+                    <div class="course-data">
+                        <h3>Frontend Developer</h3>
+                        <p>Texas | University</p>
+                        <div class="date">
+                            <ion-icon name="calendar-number-outline"></ion-icon>
+                            <p>2016-2018</p>
+                        </div>
                     </div>
                 </div>
+                <div class="course">
+                    <div class="course-data">
+                        <h3>UI/UX Designing</h3>
+                        <p>Texas | University</p>
+                        <div class="date">
+                            <ion-icon name="calendar-number-outline"></ion-icon>
+                            <p>2018-2019</p>
+                        </div>
+                    </div>
+                    <div class="data-line">
+                        <div class="rounder"></div>
+                        <!-- <div class="line"></div> -->
+                    </div>
+                </div>
+
+
+
+
             </div>
-
-
-
         </div>
 
-        <!-- *work Timeline****************************************** -->
-        <div class="timeline">
-            <div class="course">
-                <div class="course-data">
-                    <h3>Software Engineer</h3>
-                    <p>Microsoft | Peru</p>
-                    <div class="date">
-                        <ion-icon name="calendar-number-outline"></ion-icon>
-                        <p>2016-2018</p>
-                    </div>
-                </div>
-                <div class="data-line">
-                    <div class="rounder"></div>
-                    <div class="line"></div>
-                </div>
-                <div class="blank"></div>
-            </div>
-            <div class="course">
-
-                <div class="blank">
-
-                </div>
-                <div class="data-line">
-                    <div class="rounder"></div>
-                    <div class="line"></div>
-                </div>
 
 
-                <div class="course-data">
-                    <h3>Frontend Developer</h3>
-                    <p>Texas | University</p>
-                    <div class="date">
-                        <ion-icon name="calendar-number-outline"></ion-icon>
-                        <p>2016-2018</p>
-                    </div>
-                </div>
-            </div>
-            <div class="course">
-                <div class="course-data">
-                    <h3>UI/UX Designing</h3>
-                    <p>Texas | University</p>
-                    <div class="date">
-                        <ion-icon name="calendar-number-outline"></ion-icon>
-                        <p>2018-2019</p>
-                    </div>
-                </div>
-                <div class="data-line">
-                    <div class="rounder"></div>
-                    <!-- <div class="line"></div> -->
-                </div>
-            </div>
-            
-
-
-
-        </div>
-
-
-
-        
     </section>
 
 

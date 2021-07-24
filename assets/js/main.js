@@ -70,5 +70,38 @@ function design_skills() {
 }
 
 // *****Qualification shows
+let education_tab = document.getElementById('education-tab');
+let work_tab = document.getElementById('work-tab');
 
+let education =document.querySelector('.education')
+let work =document.querySelector('.work')
+
+
+console.log(education)
+
+function showQualification(element1){
+    
+
+    if (element1==="work"){
+
+        // *Adding work timeline
+        work_tab.classList.add('qualification-active')
+        education_tab.classList.remove('qualification-active')
+
+        // *highlight tab
+        work.classList.add('active-tab')
+        education.classList.remove('active-tab')
+    }
+    else if(element1 =='education'){
+
+        // *Adding education timeline
+        work_tab.classList.remove('qualification-active')
+        education_tab.classList.add('qualification-active')
+
+         // *highlight tab
+         work.classList.remove('active-tab')
+         education.classList.add('active-tab')
+        
+    }
+}
 

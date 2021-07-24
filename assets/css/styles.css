@@ -528,6 +528,8 @@ nav ul li a ion-icon{
     justify-content: space-around;
     /* width: 100%; */
     padding: 10rem;
+    transition: 0.5s;
+    
 }
 .course{
     /* border: 1px solid red; */
@@ -579,6 +581,7 @@ nav ul li a ion-icon{
 
 .qualification-active{
     display: block;
+  
 }
 
 
