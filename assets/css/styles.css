@@ -35,14 +35,14 @@
     
     --font-fam1: 'Poppins', sans-serif;
     --font-fam2: "open-sans";
-    --icon-size : 30px;
+    --icon-size : 30rem;
     
     /*========== Font and typography ==========*/
-    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
-    --font-h2: 18px;
-    --font-btn:20px;
-    --font-icon: 25px;
-    --font-heading: 35px;
+    /* .5rem = 8rem, 1rem = 16rem, 1.5rem = 24rem ... */
+    --font-h2: 18rem;
+    --font-btn:20rem;
+    --font-icon: 25rem;
+    --font-heading: 35rem;
     
     /*========== z index ==========*/
     --z-tooltip: ;
@@ -59,9 +59,13 @@
     font-family: var(--font-fam1);
     scroll-behavior: smooth;
 }
+html{
+    font-size: 1px;
+    /* * this means 1 rem = 1 px */
+}
 body{
     position: relative;
-    font-size: 16px;
+    font-size: 16rem;
     
 }
 
@@ -69,7 +73,7 @@ body{
 /**========== Reussabel css  ==========*/
 .active_menu{
     /* display: grid; */
-    bottom: 50px;
+    bottom: 50rem;
     
 }
 .heading{
@@ -78,18 +82,18 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 10rem;
 }
 .heading h2{
     font-size: var(--font-heading);
-    padding: 10px;
-    padding-bottom: 0px;
+    padding: 10rem;
+    padding-bottom: 0rem;
 
 }
 .margin-t-50{
-    margin-top: 40px;
-    padding-bottom: 10px;
-    /* margin-bottom: 20px; */
+    margin-top: 40rem;
+    padding-bottom: 10rem;
+    /* margin-bottom: 20rem; */
   
 }
 .container{
@@ -97,11 +101,11 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 10px;
+    margin: 10rem;
 }
 /** for activating skills */
 .active-skill{
-    height:200px;
+    height:200rem;
     transition:  1s;
 }
 
@@ -129,8 +133,8 @@ nav ul{
 
 nav ul li{
     list-style: none;
-    padding: 10px 10px;
-    /* border: 1px solid red; */
+    padding: 10rem 10rem;
+    /* border: 1rem solid red; */
     
 }
 nav ul li a{
@@ -161,23 +165,23 @@ nav ul li a ion-icon{
     align-items: center;
     
     
-    /* border: 1px solid var(--font-color); */
-    box-shadow: 0 0  2px var(--font-color);
+    /* border: 1rem solid var(--font-color); */
+    box-shadow: 0 0  2rem var(--font-color);
 }
 
 .navbar h2{
-    padding: 5px 5px 5px 15px;
+    padding: 5rem 5rem 5rem 15rem;
     font-size: var(--font-h2);
 }
 
 .navbar .apps{
-    padding: 5px 10px;
+    padding: 5rem 10rem;
     font-size: var(--font-icon);
 }
 
 .navbar .apps ion-icon{
     cursor: pointer;
-    margin: 0 15px;
+    margin: 0 15rem;
 }
 #closeBtn{
     display: none;
@@ -191,9 +195,9 @@ nav ul li a ion-icon{
         position: fixed;
         bottom: -30%;
         right: 0;
-        box-shadow: 0 0 20px var(--color-s2);
+        box-shadow: 0 0 20rem var(--color-s2);
         background-color: var(--color-s3);
-        border-radius: 20px 20px 0 0 ;
+        border-radius: 20rem 20rem 0 0 ;
         transition:0.5s;
         display: grid;
         grid-template-columns: repeat(3,1fr);
@@ -223,8 +227,8 @@ nav ul li a ion-icon{
 }
 .hero-section .photo{
     width: 100%;
-    padding: 10px;
-    margin: 20px;
+    padding: 10rem;
+    margin: 20rem;
     margin-top: 10vh;
     display: flex; 
     justify-content: space-between;
@@ -234,14 +238,14 @@ nav ul li a ion-icon{
 .social-link{
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin: 20rem;
     
     
 }
 .social-link ion-icon{
     font-size: var(--font-icon);
     color: var(--font-color2);
-    padding: 15px 10px;
+    padding: 15rem 10rem;
     cursor: pointer;
 }
 .social-link ion-icon:hover{
@@ -251,15 +255,15 @@ nav ul li a ion-icon{
 .photo .blob{
     fill: #5956fe;
     width: 70%;
-    max-width: 300px;
-    padding: 10px;
+    max-width: 300rem;
+    padding: 10rem;
 }
 .photo image{
-    width: 190px;
+    width: 190rem;
     
 }
 .hero-text{
-    padding: 20px;
+    padding: 20rem;
 }
 .hero-text H2{
     font-weight: 600;
@@ -267,8 +271,8 @@ nav ul li a ion-icon{
 .btn{
     background-color: var(--color-p);
     font-size: var(--font-btn);
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 5rem 10rem;
+    border-radius: 5rem;
     cursor: pointer;
     width: max-content;
     left: 0;
@@ -276,7 +280,7 @@ nav ul li a ion-icon{
 }
 .explore{
     align-self: flex-start;
-    margin-left: 20px;
+    margin-left: 20rem;
 }
 .btn a{
     
@@ -292,20 +296,20 @@ nav ul li a ion-icon{
     align-items: center;
     flex-direction: column;
     /* height: 100vh; */
-    /* border: 1px solid red; */
+    /* border: 1rem solid red; */
 }
 .about img{
     background-size: cover;
     width: 100%;
-    padding: 20px;
-    border-radius: 25px;
+    padding: 20rem;
+    border-radius: 25rem;
 }
 .about-text{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 20px;
+    margin: 20rem;
 }
 .about-text p{
     text-align: center;
@@ -318,16 +322,16 @@ nav ul li a ion-icon{
     grid-template-columns: repeat(3,1fr);
 }
 .about-text .counter{
-    margin: 10px;
-    padding: 5px;
+    margin: 10rem;
+    padding: 5rem;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 5rem;
     
 }
 .about-text .btn a ion-icon{
     font-size: var(--font-btn);
 
-    margin: 0 5px;
+    margin: 0 5rem;
 }
 /* ***********************************Skills Section**************** */
 .heading{
@@ -340,8 +344,8 @@ nav ul li a ion-icon{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    /* border: 1px solid red; */
-    margin: 10px;
+    /* border: 1rem solid red; */
+    margin: 10rem;
 
 }
 #sub-head1, #sub-head2, #sub-head3{
@@ -353,13 +357,13 @@ nav ul li a ion-icon{
     width: 100%;
     display: grid;
     grid-template-columns: 2fr 8fr 1fr;
-    column-gap: 5px;
+    column-gap: 5rem;
 }
 .skill-text h2,
 .skill-text  ion-icon{
     font-size: var(--font-icon);
-    padding: 10px;
-    /* padding-left: 0px; */
+    padding: 10rem;
+    /* padding-left: 0rem; */
     color: var(--color-p);
     
     
@@ -368,10 +372,10 @@ nav ul li a ion-icon{
     font-size: var(--font-btn);
 }
 .skill-text p{
-    padding: 0px 10px;
+    padding: 0rem 10rem;
 }
 .skill-text ion-icon{
-    padding: 10px;
+    padding: 10rem;
     font-size: var(--font-icon);
     display: none;
 }
@@ -384,7 +388,7 @@ nav ul li a ion-icon{
     display: flex;
     flex-direction: column;
     justify-items: center;
-    margin: 10px;
+    margin: 10rem;
     align-items: flex-end;
     position: relative;
     height: 0;
@@ -399,7 +403,7 @@ nav ul li a ion-icon{
     justify-content: center;
     align-items: right;
     
-    /* border: 1px solid blue; */
+    /* border: 1rem solid blue; */
     
 }
 .percent-text{
@@ -412,11 +416,11 @@ nav ul li a ion-icon{
     font-weight: 500;
 }
 .bar{
-    margin: 5px 2px;
+    margin: 5rem 2rem;
     width: 100%;
-    height: 8px;
+    height: 8rem;
     background-color: var(--color-bar);
-    border-radius: 5px;
+    border-radius: 5rem;
     z-index: 10;
     position: relative;
 }
@@ -425,16 +429,16 @@ nav ul li a ion-icon{
     background-color: var(--color-p);
     position: absolute;
     width: 0%;
-    height: 8px;
-    border-radius: 5px;
-    /* border: 1px solid red; */
+    height: 8rem;
+    border-radius: 5rem;
+    /* border: 1rem solid red; */
     transition: 1s  ease-in-out;
-    transition-delay: 1s;;
+    transition-delay: 0.5s;;
 }
 
 .active-skill{
     position: relative;
-    height:200px;
+    height:200rem;
     transition:  1s;
 }
 /* when the active skill clss ios active then only percent will show*/
@@ -477,11 +481,11 @@ nav ul li a ion-icon{
 
 
 footer{
-    margin-top: 100px;
+    margin-top: 100rem;
 }
 
 /* Font size for large devices */
-/* @media screen and (min-width: 968px) {
+/* @media screen and (min-width: 968rem) {
     :root {
         
         --h1-font-size:2rem ;
