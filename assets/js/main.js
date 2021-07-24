@@ -124,6 +124,8 @@ var swiper = new Swiper(".mySwiper", {
 var swiper = new Swiper(".mySwiper2", {
     slidesPerView: 1,
     spaceBetween: 30,
+    loop: true,
+    // loopFillGroupWithBlank: true,
     keyboard: {
         enabled: true
     },

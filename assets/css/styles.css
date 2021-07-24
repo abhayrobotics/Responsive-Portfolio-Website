@@ -79,7 +79,13 @@ body{
     
 }
 
-/*========== Variables Dark theme ==========*/
+/*?========== Variables Dark theme ==========*/
+/* *if any element having class dark-theme, it will affect
+ so we have to insert .dark-theme class everywhere */
+body .dark-theme{
+    --color-p : #f03c72;
+}
+
 /**========== Reussabel css  ==========*/
 .active_menu{
     /* display: grid; */
@@ -907,6 +913,18 @@ footer .copyright{
     color: var(--color-bar);
 }
 
+/* *****************Scroll bar color************* */
+::-webkit-scrollbar{
+    width: 10rem;
+    background-color: var(--color-bar);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--color-p);
+    border-radius: 8rem;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--font-color2);
+}
 
 /* Font size for large devices */
 /* @media screen and (min-width: 968rem) {
