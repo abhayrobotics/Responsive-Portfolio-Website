@@ -68,3 +68,7 @@ function design_skills() {
     arrow_up.classList.toggle('active-arrow')
 
 }
+
+// *****Qualification shows
+
+

@@ -7,7 +7,8 @@
 /* ***Header- Navbar */
 /* ***Hero Section********* */
 /* ***About Section********* */
-/* ***Skills Section********* */
+/* ***Skills Section part-1 percent********* */
+/* ***Skills Section part-2 qualification********* */
 
 
 /*?==================== VARIABLES CSS ====================*/
@@ -39,6 +40,8 @@
     
     /*========== Font and typography ==========*/
     /* .5rem = 8rem, 1rem = 16rem, 1.5rem = 24rem ... */
+    --font-p: 14rem;
+    --font-h3: 16rem;
     --font-h2: 18rem;
     --font-btn:20rem;
     --font-icon: 25rem;
@@ -91,7 +94,7 @@ body{
 
 }
 .margin-t-50{
-    margin-top: 40rem;
+    margin-top: 30rem;
     padding-bottom: 10rem;
     /* margin-bottom: 20rem; */
   
@@ -478,6 +481,112 @@ nav ul li a ion-icon{
 .active-skill .logo-design-bar:before{
     width: 85%;
 }
+
+/* ***Skills Section part-2 qualification********* */
+
+.qualification{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.qualification .category-box{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.category-box h2{
+    padding: 5rem;
+}
+.category-box ion-icon{
+    font-size: var(--font-icon);
+}
+
+.education,
+.work{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem;
+    cursor: pointer;
+}
+.education:hover,
+.work:hover{
+    color: var(--color-p);
+    
+}
+.active-tab{
+    color: var(--color-p);
+
+}
+
+/** Edu grid timeline */
+.timeline{
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    /* width: 100%; */
+    padding: 10rem;
+}
+.course{
+    /* border: 1px solid red; */
+    margin: 0 10rem;
+    display: grid;
+    grid-gap: 30rem;
+    grid-template-columns: 2fr max-content  2fr;
+    /** (3fr 1 fr 3fr)x 4 line */
+    
+}
+
+.course-data h3{
+    font-size: var(--font-h3);
+}
+.course-data p{
+    font-size: var(--font-p);
+    color: var(--font-color2);
+}
+.course-data .date{
+    display: flex;
+    align-items: center;
+    margin-top: 10rem;
+}
+.course-data ion-icon{
+    margin-right: 5rem;
+    color: var(--font-color2);
+    font-size: var(--font-h2);
+}
+.data-line{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+}
+.rounder{
+    width: 15rem;
+    height: 15rem;
+    background-color: var(--color-p);
+    border-radius: 50%;
+    display: inline-block;
+}
+.data-line .line{
+    width: 2rem;
+    height: 100%;
+    background-color: var(--color-p);
+
+}
+
+.qualification-active{
+    display: block;
+}
+
+
+
+
+
+
+
 
 
 footer{
