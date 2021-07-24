@@ -13,6 +13,7 @@
 /* ***Contact add Section********* */
 /* ***Testimonials Section********* */
 /* ***Contact  Section********* */
+/* ***Footer  Section********* */
 
 
 /*?==================== VARIABLES CSS ====================*/
@@ -25,12 +26,14 @@
     --color-p : #f03c72;
     --color-p : #ffc000 ;
     --color-p : #5956fe;
+    --color-p : #6e57e0;
     
     /** Secondary Color */
     --color-s1 : #fff;
     --color-s2 : rgba(0,0,0,0.1);
     --color-s3 : #fafafa;
-    --color-bar: #e6e3e3;
+    --color-bar: #e5e2f3;
+    --color-bar: #e8f0fe;
     --font-color: #1b1b1b;
     --font-color2: #333;
     
@@ -238,7 +241,7 @@ nav ul li a ion-icon{
     margin: 20rem;
     margin-top: 10vh;
     display: flex; 
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     
 }
@@ -651,6 +654,7 @@ nav ul li a ion-icon{
 .add-text h2{
     font-weight: 500;
     font-size: var(--font-h2);
+    margin: 20rem;
 }
 .add-text h3{
     font-weight: 400;
@@ -670,7 +674,7 @@ nav ul li a ion-icon{
     border-radius: 10rem;
 }
 
-.contact-btn a{
+.contact-add a{
     color: var(--color-p);
     text-decoration: none;
 }
@@ -678,6 +682,7 @@ nav ul li a ion-icon{
     padding: 10rem;
 }
 /* *Testimonials**************************************************************** */
+
 
 .client-testimonial{
     display: flex;
@@ -794,15 +799,114 @@ nav ul li a ion-icon{
     color: var(--rating-color);
 }
 
+/* *Contact section*********************************************** */ 
 
-
-
-
-
-
-footer{
-    margin-top: 100rem;
+.contact-details{
+    display: flex;
+    flex-direction: column;
+  
 }
+.contact-box{
+    display: flex;
+    flex-direction: column;
+    margin: 20rem;
+
+}
+.contact-via{
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    align-items: center;
+    margin: 10rem;
+}
+.contact-via ion-icon{
+    font-size: var(--font-heading);
+    color: var(--color-p);
+}
+.contact-text h2{
+    font-size: var(--font-h2);
+    padding: 0 20rem;
+    color: var(--color-p);
+}
+.contact-text p{
+    font-size: var(--font-p);
+    padding: 0 20rem;
+    color: var(--font-color2);
+}
+
+/* *contact form */
+.contact-form{
+    display: flex;
+}
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1000%;
+}
+.contact-form form input,
+.contact-form form textarea{
+    width: 90%;
+    padding: 10rem;
+    background-color: var(--color-bar);
+    color: var(--color-p);
+    font-weight: 600;
+    font-size: var(--font-h2);
+    border: none;
+    border-radius: 10rem;
+    margin: 10rem  ;
+    
+}
+.contact-form form div{
+    color: var(--color-s1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form ion-icon{
+    padding: 5rem;
+    padding-left: 10rem;
+}
+
+
+/* *****************************footer section */
+footer{
+    margin: 50rem 0rem;
+    padding: 10rem;
+    background-color: var(--color-p);
+    color: var(--color-s1);
+
+}
+footer h2{
+    font-weight: 500;
+}
+footer h3{
+    font-weight: 400;
+}
+footer .social-link{
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    transform: translateX(-10rem);
+}
+footer .social-link ion-icon{
+    color: var(--color-s1);
+    
+}
+footer .social-link ion-icon:hover{
+    color: var(--color-bar);
+    transform: translateY(-10rem);
+    transition: 0.5s;
+
+}
+footer .copyright{
+    margin: 30rem 0 10rem 0;
+    font-size: var(--font-p);
+    text-align: center;
+    color: var(--color-bar);
+}
+
 
 /* Font size for large devices */
 /* @media screen and (min-width: 968rem) {
