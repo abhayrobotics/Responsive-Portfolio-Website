@@ -9,6 +9,10 @@
 /* ***About Section********* */
 /* ***Skills Section ********* */
 /* ***Qualification Section********* */
+/* ***Portfolio Section********* */
+/* ***Contact add Section********* */
+/* ***Testimonials Section********* */
+/* ***Contact  Section********* */
 
 
 /*?==================== VARIABLES CSS ====================*/
@@ -273,7 +277,7 @@ nav ul li a ion-icon{
 }
 .btn{
     background-color: var(--color-p);
-    font-size: var(--font-btn);
+    font-size: var(--font-h2);
     padding: 5rem 10rem;
     border-radius: 5rem;
     cursor: pointer;
@@ -424,7 +428,7 @@ nav ul li a ion-icon{
     height: 8rem;
     background-color: var(--color-bar);
     border-radius: 5rem;
-    z-index: 10;
+    /* z-index: 10; */
     position: relative;
 }
 .bar::before{
@@ -590,7 +594,90 @@ nav ul li a ion-icon{
   
 }
 
-/* *Testimonials************ */
+/* *****************************Portfolio**************************************************************** */
+.portfolio1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 15rem;
+    border-radius: 10rem;
+    /* background-color: var(--color-bar); */
+    box-shadow: 0 0 30rem var(--color-bar);
+}
+.portfolio1 img{
+    background-size: cover;
+    max-width: 50%;
+    min-width: 230rem;
+}
+.portfolio1 .portfolio-text{
+  text-align: left;
+  padding: 10rem;
+  width: 100%;
+  font-size: var(--font-h3);
+}
+.portfolio1 .btn{
+    color: var(--color-s1);
+    cursor: pointer;
+    align-self: flex-start;
+    margin-left: 10rem;
+
+
+}
+/* **************************************************Contact add Section********* */
+.contact-add{
+    background-color: var(--color-p);
+    padding: 30rem 10rem 0rem 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    
+}
+.contact-add img{
+    background-size: cover;
+    width: 50%;
+}
+
+.contact-add .add-text{
+    color: var(--color-s1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.add-text h2{
+    font-weight: 500;
+    font-size: var(--font-h2);
+}
+.add-text h3{
+    font-weight: 400;
+    font-size: var(--font-h3);
+    text-align: center;
+   
+}
+.contact-btn{
+    background-color: var(--color-s1);
+    width: fit-content;
+    padding: 3rem 8rem;
+    margin: 10rem;
+    color: var(--color-p);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    border-radius: 10rem;
+}
+
+.contact-btn a{
+    color: var(--color-p);
+    text-decoration: none;
+}
+.contact-btn ion-icon{
+    padding: 10rem;
+}
+/* *Testimonials**************************************************************** */
 
 .client-testimonial{
     display: flex;
@@ -631,8 +718,8 @@ nav ul li a ion-icon{
 
 .swiper-slide .testimonial {
     display: block;
-    background-color: var(--color-s3);
-    box-shadow: 0 0 10rem var(--color-bar);
+    /* background-color: var(--color-s3); */
+    box-shadow: 0 0 30rem var(--color-bar);
     position: relative;
     width: 50%;
     min-width: 300rem;

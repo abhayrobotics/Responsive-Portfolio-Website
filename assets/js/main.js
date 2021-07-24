@@ -121,3 +121,18 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev"
     }
 });
+var swiper = new Swiper(".mySwiper2", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    keyboard: {
+        enabled: true
+    },
+    pagination: {
+        el: ".swiper-pagination2",
+        clickable: true
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    }
+});
