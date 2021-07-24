@@ -18,33 +18,33 @@
 
 <body>
 
-    <!-- * Navigation Menu -->
+    <!-- * Navigation Menu************************************* -->
     <header>
         <nav>
-            <ul class="navigation" id="navigation">
+            <ul class="navigation" id="navigation" onclick="closeMenu()">
                 <li class="menu">
-                    <a href="">
+                    <a href="#home">
                         <ion-icon name="home-outline"></ion-icon>
                         <h2>Home</h2>
                     </a>
                 </li>
-                <li class="menu"><a href="">
+                <li class="menu"><a href="#about">
                         <ion-icon name="person-outline"></ion-icon>
                         <h2>About</h2>
                     </a></li>
-                <li class="menu"><a href="">
+                <li class="menu"><a href="#skills">
                         <ion-icon name="code-outline"></ion-icon>
                         <h2>Skills</h2>
                     </a></li>
-                <li class="menu"><a href="">
+                <li class="menu"><a href="#services">
                         <ion-icon name="briefcase-outline"></ion-icon>
                         <h2>Services</h2>
                     </a></li>
-                <li class="menu"><a href="">
+                <li class="menu"><a href="#portfolio">
                         <ion-icon name="image-outline"></ion-icon>
                         <h2>Portfolio</h2>
                     </a></li>
-                <li class="menu"><a href="">
+                <li class="menu"><a href="#contact">
                         <ion-icon name="send-outline"></ion-icon>
                         <h2>Contact</h2>
                     </a></li>
@@ -65,23 +65,23 @@
         </nav>
     </header>
 
-    <!--* Hero Section -->
-    <section class="hero-section">
+    <!--* Hero Section*****************************************-->
+    <section class="hero-section container" id="home">
         <div class="photo">
             <div class="social-link">
                 <ion-icon name="logo-github"></ion-icon>
                 <ion-icon name="logo-linkedin"></ion-icon>
                 <ion-icon name="logo-youtube"></ion-icon>
- 
+
             </div>
 
             <svg class="blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
                 <mask id="mask0" mask-type="alpha">
                     <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
                 </mask>
                 <g mask="url(#mask0)">
                     <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
@@ -100,14 +100,190 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At veritatis voluptas et tenetur</p>
         </div>
 
-        <div class="btn">
-            <a href="#contact">Explore  </a>
+        <div class="btn explore">
+            <a href="#about">Explore </a>
         </div>
         <ion-icon name="chevron-down-outline"></ion-icon>
 
     </section>
 
 
+    <!--* About Section*****************************************-->
+    <section id="about" class="about margin-t-50 ">
+
+        <div class="heading">
+            <h2>About Me </h2>
+            <p>My Introduction</p>
+        </div>
+
+        <img src="./assets/img/about.jpg" alt="">
+
+        <div class="about-text">
+
+            <p>I am a passionate Full stack Web Developer and a robotics enthusiast. I enjoy creating unique , visually
+                attractive design.</p>
+
+            <div class="counter-box">
+                <div class="counter">
+                    <h2>02+</h2>
+                    <p>Years of Experience</p>
+                </div>
+                <div class="counter">
+                    <h2>20+</h2>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="counter">
+                    <h2>10+</h2>
+                    <p>Clients Worked</p>
+                </div>
+
+            </div>
+            <div class="btn"><a href="./assets/pdf/Alexa-Cv.pdf" download>Download CV<ion-icon name="download-outline">
+                    </ion-icon></a></div>
+
+        </div>
+    </section>
+
+    <!--* Skills Section*****************************************-->
+    <section class="skills  margin-t-50" id="skills">
+
+        <div class="heading">
+            <h2>Skills </h2>
+            <p>My Technical Level</p>
+        </div>
+        <div class="skill-cat">
+            <div class="frontend">
+                <div class="skill-text">
+
+                    <h2>{ }</h2>
+                    <div id="sub-head1" onclick="frontend_skills()">
+                        <h2>Frontend Developer </h2>
+                        <p>More than 2 years</p>
+                    </div>
+                    <ion-icon name="chevron-down-outline" id="down" class=" active-arrow"></ion-icon>
+                    <ion-icon name="chevron-up-outline" id ="up" class="up "></ion-icon>
+                </div>
+                <div class="skill-score"id="skill-score1">
+                    <div class="percent">
+                        <div class="percent-text">
+                            <h2>HTML</h2>
+                            <p>90%</p>
+                        </div>
+                        <div class="bar html-bar"></div>
+                    </div>
+                    <div class="percent">
+                        <div class="percent-text">
+                            <h2>CSS</h2>
+                            <p>85%</p>
+                        </div>
+                        <div class="bar  css-bar"></div>
+                    </div>
+                    <div class="percent">
+                        <div class="percent-text">
+                            <h2>JavaScript</h2>
+                            <p>75%</p>
+                        </div>
+                        <div class="bar javascript-bar"></div>
+                    </div>
+                    <div class="percent">
+                        <div class="percent-text">
+                            <h2>React</h2>
+                            <p>80%</p>
+                        </div>
+                        <div class="bar react-bar"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="backend">
+                <div class="skill-text">
+
+                    <ion-icon class="active-arrow" name="file-tray-stacked"></ion-icon>
+                 
+                    <div id="sub-head2" onclick="backend_skills()">
+                        <h2>Backend Developer </h2>
+                        <p>More than 1 year</p>
+                    </div>
+                    <ion-icon name="chevron-down-outline" id="down2" class=" active-arrow"></ion-icon>
+                    <ion-icon name="chevron-up-outline" id ="up2" class="up "></ion-icon>
+                </div>
+                <div class="skill-score"id="skill-score2">
+                    <div class="percent">
+                        <div class="percent-text">
+                            <h2>Python</h2>
+                            <p>85%</p>
+                        </div>
+                        <div class="bar python-bar"></div>
+                    </div>
+                    <div class="percent">
+                        <div class="percent-text">
+                            
+                            <h2>Django</h2>
+                            <p>80%</p>
+                        </div>
+                        <div class="bar  django-bar"></div>
+                    </div>
+                    <div class="percent">
+                        <div class="percent-text">
+                            <h2>Firebase</h2>
+                            <p>70%</p>
+                        </div>
+                        <div class="bar firebase-bar"></div>
+                    </div>
+                    <div class="percent">
+                        <div class="percent-text">
+                            <h2>SQLite</h2>
+                            <p>75%</p>
+                        </div>
+                        <div class="bar sqlite-bar"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="design">
+                <div class="skill-text">
+
+                    <ion-icon class="active-arrow" name="eyedrop-outline"></ion-icon>
+                 
+                    <div id="sub-head2" onclick="design_skills()">
+                        <h2>Designer </h2>
+                        <p>More than 1 year</p>
+                    </div>
+                    <ion-icon name="chevron-down-outline" id="down3" class=" active-arrow"></ion-icon>
+                    <ion-icon name="chevron-up-outline" id ="up3" class="up "></ion-icon>
+                </div>
+                <div class="skill-score"id="skill-score3">
+                    <div class="percent">
+                        <div class="percent-text">
+                            <h2>Sketch</h2>
+                            <p>80%</p>
+                        </div>
+                        <div class="bar sketch-bar"></div>
+                    </div>
+                    <div class="percent">
+                        <div class="percent-text">
+                            
+                            <h2>Photoshop</h2>
+                            <p>85%</p>
+                        </div>
+                        <div class="bar  photoshop-bar"></div>
+                    </div>
+                    <div class="percent">
+                        <div class="percent-text">
+                            <h2>Logo Design</h2>
+                            <p>85%</p>
+                        </div>
+                        <div class="bar logo-design-bar"></div>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
 
     <script src="./assets/js/main.js"></script>
 </body>

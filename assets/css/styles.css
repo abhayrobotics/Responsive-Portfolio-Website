@@ -6,6 +6,9 @@
 /** variable CSS */
 /* ***Header- Navbar */
 /* ***Hero Section********* */
+/* ***About Section********* */
+/* ***Skills Section********* */
+
 
 /*?==================== VARIABLES CSS ====================*/
 :root {
@@ -22,6 +25,7 @@
     --color-s1 : #fff;
     --color-s2 : rgba(0,0,0,0.1);
     --color-s3 : #fafafa;
+    --color-bar: #e6e3e3;
     --font-color: #1b1b1b;
     --font-color2: #333;
     
@@ -36,7 +40,9 @@
     /*========== Font and typography ==========*/
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
     --font-h2: 18px;
+    --font-btn:20px;
     --font-icon: 25px;
+    --font-heading: 35px;
     
     /*========== z index ==========*/
     --z-tooltip: ;
@@ -51,10 +57,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--font-fam1);
+    scroll-behavior: smooth;
 }
 body{
     position: relative;
     font-size: 16px;
+    
 }
 
 /*========== Variables Dark theme ==========*/
@@ -63,10 +71,39 @@ body{
     /* display: grid; */
     bottom: 50px;
     
-    
-    
 }
+.heading{
+    display: flex;
+    color: var(--font-color2);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.heading h2{
+    font-size: var(--font-heading);
+    padding: 10px;
+    padding-bottom: 0px;
 
+}
+.margin-t-50{
+    margin-top: 40px;
+    padding-bottom: 10px;
+    /* margin-bottom: 20px; */
+  
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+/** for activating skills */
+.active-skill{
+    height:200px;
+    transition:  1s;
+}
 
 /*========== Button Dark/Light ==========*/
 
@@ -124,11 +161,12 @@ nav ul li a ion-icon{
     align-items: center;
     
     
-    /* border: 1px solid red; */
+    /* border: 1px solid var(--font-color); */
+    box-shadow: 0 0  2px var(--font-color);
 }
 
 .navbar h2{
-    padding: 5px 5px;
+    padding: 5px 5px 5px 15px;
     font-size: var(--font-h2);
 }
 
@@ -197,8 +235,8 @@ nav ul li a ion-icon{
     display: flex;
     flex-direction: column;
     margin: 20px;
-
-
+    
+    
 }
 .social-link ion-icon{
     font-size: var(--font-icon);
@@ -208,7 +246,7 @@ nav ul li a ion-icon{
 }
 .social-link ion-icon:hover{
     color: var(--color-p);
-
+    
 }
 .photo .blob{
     fill: #5956fe;
@@ -223,26 +261,224 @@ nav ul li a ion-icon{
 .hero-text{
     padding: 20px;
 }
+.hero-text H2{
+    font-weight: 600;
+}
 .btn{
     background-color: var(--color-p);
+    font-size: var(--font-btn);
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
-    width: min-content;
+    width: max-content;
     left: 0;
     
+}
+.explore{
+    align-self: flex-start;
+    margin-left: 20px;
 }
 .btn a{
     
     color: var(--color-s3);
     text-decoration: none;
+    
+}
+/* ***About Section*************************************** */
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* height: 100vh; */
+    /* border: 1px solid red; */
+}
+.about img{
+    background-size: cover;
+    width: 100%;
+    padding: 20px;
+    border-radius: 25px;
+}
+.about-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.about-text p{
+    text-align: center;
+}
+.about-text .counter-box{
+ 
+    /* justify-content: space-evenly; */
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.about-text .counter{
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    
+}
+.about-text .btn a ion-icon{
+    font-size: var(--font-btn);
+
+    margin: 0 5px;
+}
+/* ***********************************Skills Section**************** */
+.heading{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   
+}
+.frontend , .backend, .design{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    margin: 10px;
+
+}
+#sub-head1, #sub-head2, #sub-head3{
+    cursor: pointer;
+}
+.skill-text{
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 8fr 1fr;
+    column-gap: 5px;
+}
+.skill-text h2,
+.skill-text  ion-icon{
+    font-size: var(--font-icon);
+    padding: 10px;
+    /* padding-left: 0px; */
+    color: var(--color-p);
+    
+    
+}
+.skill-text h2{
+    font-size: var(--font-btn);
+}
+.skill-text p{
+    padding: 0px 10px;
+}
+.skill-text ion-icon{
+    padding: 10px;
+    font-size: var(--font-icon);
+    display: none;
+}
+/** skills show arrow */
+.skill-text .active-arrow{
+    display: inline-block;
+}
+
+.skill-score{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin: 10px;
+    align-items: flex-end;
+    position: relative;
+    height: 0;
+    overflow: hidden;
+
+    transition:  1s;
+}
+.skill-score .percent{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    align-items: right;
+    
+    /* border: 1px solid blue; */
+    
+}
+.percent-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.percent-text h2{
+    font-size: var(--font-btn);
+    font-weight: 500;
+}
+.bar{
+    margin: 5px 2px;
+    width: 100%;
+    height: 8px;
+    background-color: var(--color-bar);
+    border-radius: 5px;
+    z-index: 10;
+    position: relative;
+}
+.bar::before{
+    content: "";
+    background-color: var(--color-p);
+    position: absolute;
+    width: 0%;
+    height: 8px;
+    border-radius: 5px;
+    /* border: 1px solid red; */
+    transition: 1s  ease-in-out;
+    transition-delay: 1s;;
+}
+
+.active-skill{
+    position: relative;
+    height:200px;
+    transition:  1s;
+}
+/* when the active skill clss ios active then only percent will show*/
+
+.active-skill .html-bar:before{
+   
+    width: 90%;
+}
+.active-skill .css-bar:before{
+    width: 85%;
+}
+.active-skill .javascript-bar:before{
+    width: 75%;
+}
+.active-skill .react-bar:before{
+    width: 80%;
+}
+.active-skill .python-bar:before{
+   
+    width: 85%;
+}
+.active-skill .django-bar:before{
+    width: 80%;
+}
+.active-skill .firebase-bar:before{
+    width: 70%;
+}
+.active-skill .sqlite-bar:before{
+    width: 75%;
+}
+.active-skill .sketch-bar:before{
+    width: 80%;
+}
+.active-skill .photoshop-bar:before{
+    width: 85%;
+}
+.active-skill .logo-design-bar:before{
+    width: 85%;
 }
 
 
-
-
-
-
+footer{
+    margin-top: 100px;
+}
 
 /* Font size for large devices */
 /* @media screen and (min-width: 968px) {
