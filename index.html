@@ -7,9 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile first</title>
 
+    <!-- * Swipper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     <!-- *icons -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- * Core CSS -->
     <link rel="stylesheet" href="./assets/css/styles.css">
@@ -36,9 +43,9 @@
                         <ion-icon name="code-outline"></ion-icon>
                         <h2>Skills</h2>
                     </a></li>
-                <li class="menu"><a href="#services">
+                <li class="menu"><a href="#qualification">
                         <ion-icon name="briefcase-outline"></ion-icon>
-                        <h2>Services</h2>
+                        <h2>Qualification</h2>
                     </a></li>
                 <li class="menu"><a href="#portfolio">
                         <ion-icon name="image-outline"></ion-icon>
@@ -144,7 +151,7 @@
         </div>
     </section>
 
-    <!--* Skills Section -part-1 Percentage analysis**************-->
+    <!--* Skills Section Percentage analysis**************-->
     <section class="skills  margin-t-50" id="skills">
         <div class="skill-box">
 
@@ -161,10 +168,10 @@
                             <h2>Frontend Developer </h2>
                             <p>More than 2 years</p>
                         </div>
-                        <ion-icon name="chevron-down-outline" id="down" class=" active-arrow"></ion-icon>
-                        <ion-icon name="chevron-up-outline" id="up" class="up "></ion-icon>
+                        <ion-icon name="chevron-down-outline" id="down" class=" "></ion-icon>
+                        <ion-icon name="chevron-up-outline" id="up" class="up active-arrow"></ion-icon>
                     </div>
-                    <div class="skill-score" id="skill-score1">
+                    <div class="skill-score active-skill" id="skill-score1">
                         <div class="percent">
                             <div class="percent-text">
                                 <h2>HTML</h2>
@@ -286,8 +293,9 @@
 
     </section>
 
-    <!--*Skill Section part-2 Education/ Work details -->
-    <section class="qualification  margin-t-50">
+    <!--* Qualification Section -->
+   
+    <section class="qualification  margin-t-50" id='qualification'>
 
         <div class="heading">
             <h2>Qualification </h2>
@@ -444,11 +452,104 @@
 
 
     </section>
+     
+    <!--* Portfolio Section******************************************-->
+    <!--* Testimonial Section******************************************-->
+    <section class="client-testimonial">
+        <div class="heading">
+            <h2>Testimonials </h2>
+            <p>My Client say</p>
+        </div>
 
+    
+        <!-- Swiper -->
+        
+        <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonial">
+                        
+                        <div class="quote">
+                            <i class="fa fa-quote-left quote-icon"></i>
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat officia dignissimos quaerat.
+                            Dolor, porro ex.</p>
+                        <div class="client">
+                            <img src="./assets/img/testimonial1.jpg" alt="">
+                        </div>
+                        <h4>Harris Patel</h4>
+                        <h5>Managing Director, Amazon</h5>
+                        <div class="star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial">
+                        
+                        <div class="quote">
+                            <i class="fa fa-quote-left quote-icon"></i>
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat officia dignissimos quaerat.
+                            Dolor, porro ex.</p>
+                        <div class="client">
+                            <img src="./assets/img/testimonial2.jpg" alt="">
+                        </div>
+                        <h4>Rucheta Dalal</h4>
+                        <h5>Managing Director, Amazon</h5>
+                        <div class="star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial">
+                        
+                        <div class="quote">
+                            <i class="fa fa-quote-left quote-icon"></i>
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat officia dignissimos quaerat.
+                            Dolor, porro ex.</p>
+                        <div class="client">
+                            <img src="./assets/img/testimonial3.jpg" alt="">
+                        </div>
+                        <h4>BayMax</h4>
+                        <h5>Actor, Big Hero 6</h5>
+                        <div class="star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+    
+                    </div>
+                </div>
+            
+    
+            </div>
+    
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
 
+    </section>
     <footer>
 
     </footer>
+    <!-- *Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script src="./assets/js/main.js"></script>
 </body>

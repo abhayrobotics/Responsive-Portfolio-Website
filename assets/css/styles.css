@@ -7,8 +7,8 @@
 /* ***Header- Navbar */
 /* ***Hero Section********* */
 /* ***About Section********* */
-/* ***Skills Section part-1 percent********* */
-/* ***Skills Section part-2 qualification********* */
+/* ***Skills Section ********* */
+/* ***Qualification Section********* */
 
 
 /*?==================== VARIABLES CSS ====================*/
@@ -256,7 +256,7 @@ nav ul li a ion-icon{
     
 }
 .photo .blob{
-    fill: #5956fe;
+    fill: var(--color-p);
     width: 70%;
     max-width: 300rem;
     padding: 10rem;
@@ -482,7 +482,7 @@ nav ul li a ion-icon{
     width: 85%;
 }
 
-/* ***Skills Section part-2 qualification********* */
+/* ***Qualification Section********* */
 
 .qualification{
     display: flex;
@@ -520,19 +520,23 @@ nav ul li a ion-icon{
     color: var(--color-p);
 
 }
-
+.both-timeline{
+    position: relative;
+}
 /** Edu grid timeline */
 .timeline{
+    
     display: none;
     flex-direction: column;
     justify-content: space-around;
     /* width: 100%; */
     padding: 10rem;
-    transition: 0.5s;
+    transition: transform 0.5s;
+    transform: translate(500rem);
     
 }
 .course{
-    /* border: 1px solid red; */
+    /* border: 1rem solid red; */
     margin: 0 10rem;
     display: grid;
     grid-gap: 30rem;
@@ -581,10 +585,127 @@ nav ul li a ion-icon{
 
 .qualification-active{
     display: block;
+    transform: translateX(0);
+    transition: transform 0.5s;
   
 }
 
+/* *Testimonials************ */
 
+.client-testimonial{
+    display: flex;
+    flex-direction: column;
+}
+.swiper-container {
+    width: 100%;
+    /* border: 1px solid red; */
+    height:450rem;
+    padding: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18rem;
+    padding: 5rem;
+    height: fit-content;
+    /* background: #acacac; */
+    /* color: white; */
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide .testimonial {
+    display: block;
+    background-color: var(--color-s3);
+    box-shadow: 0 0 10rem var(--color-bar);
+    position: relative;
+    width: 50%;
+    min-width: 300rem;
+    /* max-height: 350rem; */
+    height: 80%;
+    object-fit: cover;
+    border-radius: 10rem;
+    overflow: hidden;
+    /* border: 2rem solid red; */
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+
+    background: var(--color-p);
+   
+}
+
+.swiper-button-next:after,
+.swiper-container-rtl .swiper-button-prev:after,
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+
+    color: var(--color-p)
+}
+
+.quote {
+    background-color: var(--color-p);
+    width: 50rem;
+    height: 50rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem 0 0 10rem;
+}
+.testimonial p{
+    font-size: var(--font-h3);
+    padding: 10rem;
+}
+
+.quote-icon {
+    font-size: 20rem;
+    color: var(--color-s1);
+}
+
+.client {
+    width: 100rem;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.client img {
+    width: fit-content;
+    /* background: url("./img/testimonial1.jpg"); */
+    /* border: 1rem solid red; */
+    border-radius: 50%;
+    padding: 10rem;
+
+}
+
+.testimonial h4,
+.testimonial h5
+{
+    color: var(--color-p);
+}
+.star{
+    padding: 10rem;
+    color: var(--rating-color);
+}
 
 
 
