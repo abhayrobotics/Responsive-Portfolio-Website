@@ -21,6 +21,9 @@
     
     /**========== Colors ==========*/
     
+    /* Globally same */
+    --color-white:#fff;
+
     /** primary color */
     --color-p : #37d610;
     --color-p : #f03c72;
@@ -31,11 +34,12 @@
     /** Secondary Color */
     --color-s1 : #fff;
     --color-s2 : rgba(0,0,0,0.1);
-    --color-s3 : #fafafa;
-    --color-bar: #e5e2f3;
-    --color-bar: #e8f0fe;
+    --color-s3 : #f1f3f8;
+  
+    --color-bar: #9c9c9c;
     --font-color: #1b1b1b;
-    --font-color2: #333;
+    
+    --font-color2: #1e1e1e;
     
     /* *Ascent color */
     --border-color: rgba(0,0,0,0.4);
@@ -76,20 +80,42 @@ html{
 body{
     position: relative;
     font-size: 16rem;
+    background-color: var(--color-s1);
     
 }
 
 /*?========== Variables Dark theme ==========*/
 /* *if any element having class dark-theme, it will affect
- so we have to insert .dark-theme class everywhere */
+so we have to insert .dark-theme class everywhere */
 body .dark-theme{
-    --color-p : #f03c72;
+    transition: 0.3s;
+    --color-p : #6e57e0;
+   
+    
+    /* --color-p:#f03c72; */
+      
+    --color-s1 : #121212;
+    --color-s3 : #1e1e1e;
+    --color-bar: #121212;
+    --font-color: #e1e1e1;
+    --font-color2: #9c9c9c;
+    
+    --border-color: #9c9c9c;
+
+    
+}
+
+section{
+    
+    background-color:var(--color-s1);
+    color: var(--font-color);    
+
 }
 
 /**========== Reussabel css  ==========*/
 .active_menu{
     /* display: grid; */
-    bottom: 50rem;
+    bottom: 48rem;
     
 }
 .heading{
@@ -99,17 +125,23 @@ body .dark-theme{
     justify-content: center;
     align-items: center;
     padding: 10rem;
+    color: var(--font-color2);
 }
 .heading h2{
     font-size: var(--font-heading);
     padding: 10rem;
     padding-bottom: 0rem;
+    color: var(--font-color);
 
 }
+.heading p{
+    color: var(--font-color2);
+}
 .margin-t-50{
-    margin-top: 30rem;
+    padding-top: 30rem;
     padding-bottom: 10rem;
     /* margin-bottom: 20rem; */
+    
   
 }
 .container{
@@ -125,15 +157,17 @@ body .dark-theme{
     transition:  1s;
 }
 
+
 /*========== Button Dark/Light ==========*/
 
 
 /* *****************************Navigation Bar*********************** */
 
-header{
+section .header{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 nav{
     display: flex;
@@ -145,6 +179,7 @@ nav{
 nav ul{
     flex-direction: row;
     display: flex;
+    box-shadow: 0 0 20rem var(--color-bar);
 }
 
 nav ul li{
@@ -198,6 +233,9 @@ nav ul li a ion-icon{
 .navbar .apps ion-icon{
     cursor: pointer;
     margin: 0 15rem;
+}
+#sun{
+    display: none;
 }
 #closeBtn{
     display: none;
@@ -280,9 +318,12 @@ nav ul li a ion-icon{
 }
 .hero-text{
     padding: 20rem;
+    color: var(--font-color2);
 }
-.hero-text H2{
+.hero-text h2,
+.hero-text h3{
     font-weight: 600;
+    color: var(--font-color);
 }
 .btn{
     background-color: var(--color-p);
@@ -300,7 +341,7 @@ nav ul li a ion-icon{
 }
 .btn a{
     
-    color: var(--color-s3);
+    color: var(--color-white);
     text-decoration: none;
     
 }
@@ -326,9 +367,12 @@ nav ul li a ion-icon{
     align-items: center;
     justify-content: center;
     margin: 20rem;
+    
 }
 .about-text p{
     text-align: center;
+
+    color: var(--font-color2);
 }
 .about-text .counter-box{
  
@@ -435,7 +479,7 @@ nav ul li a ion-icon{
     margin: 5rem 2rem;
     width: 100%;
     height: 8rem;
-    background-color: var(--color-bar);
+    background-color: var(--color-s3);
     border-radius: 5rem;
     /* z-index: 10; */
     position: relative;
@@ -613,7 +657,8 @@ nav ul li a ion-icon{
     padding: 15rem;
     border-radius: 10rem;
     /* background-color: var(--color-bar); */
-    box-shadow: 0 0 30rem var(--color-bar);
+    box-shadow: 0 0 20rem var(--color-bar);
+    background-color: var(--color-s3);
 }
 .portfolio1 img{
     background-size: cover;
@@ -626,8 +671,11 @@ nav ul li a ion-icon{
   width: 100%;
   font-size: var(--font-h3);
 }
+.portfolio-text p{
+    color: var(--font-color2);
+}
 .portfolio1 .btn{
-    color: var(--color-s1);
+    color: var(--color-white);
     cursor: pointer;
     align-self: flex-start;
     margin-left: 10rem;
@@ -660,10 +708,12 @@ nav ul li a ion-icon{
 .add-text h2{
     font-weight: 500;
     font-size: var(--font-h2);
+    color: var(--font-color);
     margin: 20rem;
 }
 .add-text h3{
-    font-weight: 400;
+    color: var(--font-color);
+    font-weight: 500;
     font-size: var(--font-h3);
     text-align: center;
    
@@ -681,7 +731,7 @@ nav ul li a ion-icon{
 }
 
 .contact-add a{
-    color: var(--color-p);
+    color: var(--font-color);
     text-decoration: none;
 }
 .contact-btn ion-icon{
@@ -730,7 +780,7 @@ nav ul li a ion-icon{
 .swiper-slide .testimonial {
     display: block;
     /* background-color: var(--color-s3); */
-    box-shadow: 0 0 30rem var(--color-bar);
+    box-shadow: 0 0 20rem var(--color-bar);
     position: relative;
     width: 50%;
     min-width: 300rem;
@@ -739,6 +789,7 @@ nav ul li a ion-icon{
     object-fit: cover;
     border-radius: 10rem;
     overflow: hidden;
+    background-color: var(--color-s3);
     /* border: 2rem solid red; */
 }
 
@@ -769,6 +820,7 @@ nav ul li a ion-icon{
 .testimonial p{
     font-size: var(--font-h3);
     padding: 10rem;
+    color: var(--font-color2);
 }
 
 .quote-icon {
@@ -855,14 +907,14 @@ nav ul li a ion-icon{
 .contact-form form textarea{
     width: 90%;
     padding: 10rem;
-    background-color: var(--color-bar);
+    background-color: var(--color-s3);
     color: var(--color-p);
     font-weight: 600;
     font-size: var(--font-h2);
     border: none;
     border-radius: 10rem;
     margin: 10rem  ;
-    
+    resize: none;
 }
 .contact-form form div{
     color: var(--color-s1);
@@ -874,39 +926,43 @@ form ion-icon{
     padding: 5rem;
     padding-left: 10rem;
 }
+form  .btn{
+    margin-bottom: 20rem;
+}
 
 
 /* *****************************footer section */
-footer{
-    margin: 50rem 0rem;
+.footer{
+    padding: 50rem 0rem;
     padding: 10rem;
     background-color: var(--color-p);
     color: var(--color-s1);
 
 }
-footer h2{
+.footer h2{
     font-weight: 500;
 }
-footer h3{
+.footer h3{
     font-weight: 400;
+ 
 }
-footer .social-link{
+.footer .social-link{
     flex-direction: row;
     margin: 0;
     padding: 0;
     transform: translateX(-10rem);
 }
-footer .social-link ion-icon{
+.footer .social-link ion-icon{
     color: var(--color-s1);
     
 }
-footer .social-link ion-icon:hover{
-    color: var(--color-bar);
+.footer .social-link ion-icon:hover{
+  
     transform: translateY(-10rem);
     transition: 0.5s;
 
 }
-footer .copyright{
+.footer .copyright{
     margin: 30rem 0 10rem 0;
     font-size: var(--font-p);
     text-align: center;
@@ -926,15 +982,48 @@ footer .copyright{
     background-color: var(--font-color2);
 }
 
-/* Font size for large devices */
-/* @media screen and (min-width: 968rem) {
-    :root {
-        
-        --h1-font-size:2rem ;
-        --h2-font-size: ;
-        --h3-font-size: ;
-        --normal-font-size: ;
-        --small-font-size: ;
-        --smaller-font-size: ;
+/** Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active
+{
+ -webkit-box-shadow: 0 0 0 30px var(--color-s3) inset !important;
+}
+/*Change text in autofill textbox*/
+input:-webkit-autofill
+{
+ -webkit-text-fill-color: var(--color-p) !important;
+}
+
+
+
+/* *for small size */
+@media screen and (max-width:350px) {
+
+    html{
+        font-size: 0.9px;
     }
-} */
+    /* *About */
+    .about-text .counter-box {
+        grid-template-columns: 1fr;
+    }
+    /* Portfolio */
+    .portfolio1{
+        width: 95%;
+    }
+    .swiper-button-next, .swiper-container-rtl .swiper-button-prev,
+    .swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after
+     {
+        
+        display: none;
+    }
+    /* testimonial */
+
+    .swiper-slide .testimonial{
+        width: 95%;
+    }
+  
+
+
+}

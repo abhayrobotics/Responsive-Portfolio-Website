@@ -1,4 +1,55 @@
+// ******************Dark mode
 
+let section = document.querySelectorAll('section')
+let sun = document.getElementById('sun')
+let moon = document.getElementById('moon')
+
+
+// * if not set theme. theme==sun
+if (localStorage.getItem('theme') === null) {
+    localStorage.setItem('theme', 'sun')
+}
+
+// * local storage theme= moon, change theme to moon
+if (localStorage.getItem('theme') === 'moon') {
+    themeMoon()
+}
+
+//* changing theme to moon (or dark)
+function themeMoon() {
+    console.log(localStorage.getItem('theme'))
+    
+    for (let i = 0; i < section.length; i++) {
+        // console.log(section[0])
+        //* adding dark theme to all sectio
+        section[i].classList.add('dark-theme')
+    }
+    // *updating theme status value
+    localStorage.setItem('theme','moon')
+    
+    sun.style.display = "inline-block"
+    moon.style.display = "none"
+    
+}
+
+//* changing theme to sun or light
+function themeSun() {
+    
+    console.log(localStorage.getItem('theme'))
+    
+    for (let i = 0; i < section.length; i++) {
+        // console.log(section[0])
+        //* removing dark theme to all section
+        section[i].classList.remove('dark-theme')
+    }
+    
+    // *updating theme status value
+    localStorage.setItem('theme','sun') 
+
+    moon.style.display = "inline-block"
+    sun.style.display = "none"
+
+}
 
 
 // * **************************************Menu bar show**************
@@ -69,20 +120,20 @@ function design_skills() {
 
 }
 
-// *****Qualification shows
+// *****Qualification shows**********************************
 let education_tab = document.getElementById('education-tab');
 let work_tab = document.getElementById('work-tab');
 
-let education =document.querySelector('.education')
-let work =document.querySelector('.work')
+let education = document.querySelector('.education')
+let work = document.querySelector('.work')
 
 
-console.log(education)
+// console.log(education)
 
-function showQualification(element1){
-    
+function showQualification(element1) {
 
-    if (element1==="work"){
+
+    if (element1 === "work") {
 
         // *Adding work timeline
         work_tab.classList.add('qualification-active')
@@ -92,16 +143,16 @@ function showQualification(element1){
         work.classList.add('active-tab')
         education.classList.remove('active-tab')
     }
-    else if(element1 =='education'){
+    else if (element1 == 'education') {
 
         // *Adding education timeline
         work_tab.classList.remove('qualification-active')
         education_tab.classList.add('qualification-active')
 
-         // *highlight tab
-         work.classList.remove('active-tab')
-         education.classList.add('active-tab')
-        
+        // *highlight tab
+        work.classList.remove('active-tab')
+        education.classList.add('active-tab')
+
     }
 }
 //*************swiper js.
@@ -109,6 +160,7 @@ function showQualification(element1){
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 30,
+    loop: true,
     keyboard: {
         enabled: true
     },

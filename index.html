@@ -8,7 +8,8 @@
     <title>Mobile first</title>
 
     <!-- * Swipper -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
 
     <!-- *icons -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -24,9 +25,10 @@
 </head>
 
 <body>
+    <!-- Dark theme -->
 
     <!-- * Navigation Menu************************************* -->
-    <header>
+    <section class="header ">
         <nav>
             <ul class="navigation" id="navigation" onclick="closeMenu()">
                 <li class="menu">
@@ -62,7 +64,10 @@
                 <h2>Alexa</h2>
                 <div class="apps">
 
-                    <ion-icon name="moon-outline"></ion-icon>
+                    <ion-icon class="" name="moon-outline" onclick="themeMoon()" id="moon"></ion-icon>
+                    
+                    <ion-icon name="sunny-outline" onclick="themeSun()" id="sun"></ion-icon>
+                    
 
                     <ion-icon onclick="openMenu()" name="apps-outline" id="app"></ion-icon>
                     <ion-icon onclick="closeMenu()" name="close-outline" id="closeBtn"></ion-icon>
@@ -70,10 +75,10 @@
 
             </div>
         </nav>
-    </header>
+    </section>
 
     <!--* Hero Section*****************************************-->
-    <section class="hero-section container" id="home">
+    <section class="hero-section   d" id="home">
         <div class="photo">
             <div class="social-link">
                 <ion-icon name="logo-github"></ion-icon>
@@ -127,7 +132,8 @@
 
         <div class="about-text">
 
-            <p>I am a passionate Full stack Web Developer and a robotics enthusiast. I enjoy creating unique , visually
+            <p>I am a passionate Full stack Web Developer and a robotics enthusiast. I enjoy creating unique ,
+                visually
                 attractive design.</p>
 
             <div class="counter-box">
@@ -515,7 +521,7 @@
             <h2>You have a new Project</h2>
             <h3>Contact me now and get exiting offers on your new Projects !</h3>
         </div>
-        <div >
+        <div>
             <a href="#contact" class="contact-btn">
                 <h3>Contact</h3>
                 <ion-icon name="send"></ion-icon>
@@ -679,8 +685,9 @@
     </section>
 
     <!-- *footer section************************************ -->
-    <footer>
+    <section class="footer">
         <h2>Alexa</h2>
+
         <h3>Full stack Web Developer</h3>
         <div class="social-link">
             <ion-icon name="logo-facebook"></ion-icon>
@@ -690,9 +697,11 @@
         </div>
         <div class="copyright">Copyright &copy; 2021 | All rights reserved </div>
 
-    </footer>
+    </section>
+
     <!-- *Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
 
     <script src="./assets/js/main.js"></script>
 </body>
