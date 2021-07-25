@@ -242,7 +242,7 @@ nav ul li a ion-icon{
 }
 
 /* position botton for navbar  */
-@media screen and (max-width:550px) {
+@media screen and (max-width:650px) {
     
     /* * Show Menu  */
     nav ul{
@@ -999,7 +999,7 @@ input:-webkit-autofill
 
 
 /* *for small size */
-@media screen and (max-width:350px) {
+@media screen and (max-width:650px) {
 
     html{
         font-size: 0.9px;
@@ -1022,8 +1022,54 @@ input:-webkit-autofill
 
     .swiper-slide .testimonial{
         width: 95%;
+        min-width: fit-content;
     }
   
 
 
+}
+
+/* *for small size */
+@media screen and (min-width:651px) {
+    html{
+        font-size: 1.1px;
+    }   
+
+        .navigation{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            position: absolute
+    top: 0;
+        }
+
+        .navigation li a ion-icon{
+            display: none;
+        }
+        nav ul{
+            box-shadow: 0 0 0  white;
+        }
+    
+        nav ul li {
+            padding: 10rem 5rem;
+        }
+        nav ul li a h2 {
+            font-size: var(--font-h3);
+            z-index: 11;
+
+        }
+        .navbar{
+            display: flex;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            font-size: var(--font-h2);
+            background-color: var(--color-s1);
+            /* opacity: 1; */
+            z-index: 10;
+        }
+        .navbar .apps #app,
+        .navbar .apps #closeBtn{
+            display: none;
+        }
 }
