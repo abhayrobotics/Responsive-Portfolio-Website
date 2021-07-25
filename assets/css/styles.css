@@ -56,6 +56,7 @@
     --font-h2: 18rem;
     --font-btn:20rem;
     --font-icon: 25rem;
+    --font-30: 30rem;
     --font-heading: 35rem;
     
     /*========== z index ==========*/
@@ -271,7 +272,11 @@ nav ul li a ion-icon{
 }
 
 
-/* ***Hero Section********* */
+/* ***Hero Section********************** */
+
+.big-screen{
+    display: none;
+}
 .hero-section {
     display: flex;
     justify-content: center;
@@ -337,7 +342,7 @@ nav ul li a ion-icon{
 }
 .explore{
     align-self: flex-start;
-    margin-left: 20rem;
+   margin-top: 10rem;
 }
 .btn a{
     
@@ -430,6 +435,7 @@ nav ul li a ion-icon{
 }
 .skill-text h2{
     font-size: var(--font-btn);
+    width: max-content;
 }
 .skill-text p{
     padding: 0rem 10rem;
@@ -996,13 +1002,27 @@ input:-webkit-autofill
  -webkit-text-fill-color: var(--color-p) !important;
 }
 
-
+@media screen and (max-width:350px){
+    
+    nav ul li a h2 {
+        font-size: var(--font-h3);
+    }
+   
+}
 
 /* *for small size */
 @media screen and (max-width:650px) {
 
     html{
         font-size: 0.9px;
+    }
+    .social-link ion-icon {
+        font-size: var(--font-30);
+    }
+    .photo image{
+
+    width: 220rem;
+
     }
     /* *About */
     .about-text .counter-box {
@@ -1024,6 +1044,15 @@ input:-webkit-autofill
         width: 95%;
         min-width: fit-content;
     }
+       .frontend, .backend, .design {
+        width: 90%;
+    }
+    .skill-text{
+        grid-template-columns: 1fr 13fr 1fr;
+    }
+    .skill-score .percent{
+        width: 93%;
+    }
   
 
 
@@ -1035,12 +1064,16 @@ input:-webkit-autofill
         font-size: 1.1px;
     }   
 
+    .container{
+        width: 80%;
+    }
+
         .navigation{
             width: 100%;
             display: flex;
             justify-content: center;
-            position: absolute
-    top: 0;
+            position: absolute;
+            top: 0;
         }
 
         .navigation li a ion-icon{
@@ -1067,9 +1100,109 @@ input:-webkit-autofill
             background-color: var(--color-s1);
             /* opacity: 1; */
             z-index: 10;
+            box-shadow: none;
         }
         .navbar .apps #app,
         .navbar .apps #closeBtn{
             display: none;
         }
-}
+
+        /* *hERO sECTION */
+        .big-screen{
+            display: flex;
+            flex-direction: column;
+        }
+        .small-screen{
+            display: none;
+        }
+
+        .hero-section .photo{
+            margin: 120rem 10rem 30rem 10rem;
+        }
+        .photo .blob {
+           
+            width: 100%;
+            max-width: 250rem;
+        }
+        /* About  */
+        .about img {
+            max-width: 50vw;
+        }
+
+        /* ********************Skill  */
+        .skill-cat{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .portfolio1{
+            width: 60%;
+        }
+    }
+
+
+
+    @media screen and (min-width:901px) {
+        html{
+            font-size: 1.2px;
+        }
+    }
+    @media screen and (min-width:1200px ){
+        
+        nav ul li {
+            padding: 10rem 10rem;
+        }
+        .hero-section{
+            height: 100vh;
+        }
+        .hero-section .photo {
+            width: 80%;
+        }
+
+        .about img{
+            width: 30vw;
+        }
+        .photo image {
+            width: 165rem;
+        }
+
+        .about-text{
+            width: 80%;
+        }
+
+        
+    .frontend, .backend, .design {
+        width: 80%;
+    }
+    .skill-text{
+        grid-template-columns: 1fr 13fr 1fr;
+    }
+    .skill-score .percent{
+        width: 93%;
+    }
+   
+    .contact-add img {
+       
+        /* background-size: cover; */
+        width: 20vw;
+    }
+        .contact-details{
+            flex-direction: row;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+        }
+
+        .contact{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .contact-form{
+            width: inherit;
+        }
+
+
+    }
